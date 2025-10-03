@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>DevStudio - Desarrollo Web Profesional</title>
+    <title>Iván Montañés - Desarrollador Web</title>
     <style>
       * {
         margin: 0;
@@ -57,7 +57,7 @@
         top: 0;
         width: 100%;
         padding: 1.5rem 5%;
-        background: rgba(10, 10, 10, 0.8);
+        background: rgba(10, 10, 10, 0.95);
         backdrop-filter: blur(10px);
         z-index: 1000;
         border-bottom: 1px solid rgba(99, 102, 241, 0.2);
@@ -119,7 +119,7 @@
         display: flex;
         align-items: center;
         justify-content: center;
-        padding: 2rem 5%;
+        padding: 8rem 5% 4rem 5%;
         position: relative;
       }
 
@@ -323,7 +323,7 @@
 
       /* Contact Section */
       .contact {
-        padding: 6rem 5%;
+        padding: 6rem 5% 6rem 5%;
         background: #0a0a0a;
       }
 
@@ -373,6 +373,53 @@
         min-height: 150px;
       }
 
+      /* Footer */
+      footer {
+        padding: 3rem 5% 2rem 5%;
+        background: #0a0a0a;
+        border-top: 1px solid rgba(99, 102, 241, 0.2);
+        text-align: center;
+      }
+
+      .footer-content {
+        max-width: 800px;
+        margin: 0 auto;
+      }
+
+      .footer-title {
+        margin-bottom: 1rem;
+        color: #6366f1;
+        font-size: 1.5rem;
+      }
+
+      .footer-subtitle {
+        color: #a0a0a0;
+        margin-bottom: 1.5rem;
+      }
+
+      .footer-links {
+        display: flex;
+        gap: 2rem;
+        justify-content: center;
+        margin-bottom: 1.5rem;
+        flex-wrap: wrap;
+      }
+
+      .footer-links a {
+        color: #6366f1;
+        text-decoration: none;
+        transition: color 0.3s;
+      }
+
+      .footer-links a:hover {
+        color: #8b5cf6;
+      }
+
+      .footer-copyright {
+        color: #666;
+        font-size: 0.9rem;
+      }
+
       @keyframes fadeInUp {
         from {
           opacity: 0;
@@ -405,19 +452,128 @@
       @media (max-width: 968px) {
         .hero-content {
           grid-template-columns: 1fr;
+          gap: 3rem;
+        }
+
+        .hero {
+          padding: 6rem 5% 3rem 5%;
+          min-height: auto;
         }
 
         .hero-text h1 {
           font-size: 2.5rem;
         }
 
+        .hero-text p {
+          font-size: 1.1rem;
+        }
+
         .nav-links {
           gap: 1rem;
+          font-size: 0.9rem;
         }
 
         .cta-buttons {
           flex-direction: column;
         }
+
+        .section-title {
+          font-size: 2.2rem;
+        }
+
+        .services {
+          padding: 4rem 5%;
+        }
+
+        .contact {
+          padding: 4rem 5% 4rem 5%;
+        }
+
+        .contact-form {
+          padding: 2rem 1.5rem;
+        }
+
+        .logo {
+          font-size: 1.4rem;
+        }
+
+        header {
+          padding: 1rem 5%;
+        }
+      }
+
+      @media (max-width: 480px) {
+        .hero {
+          padding: 5rem 5% 2rem 5%;
+        }
+
+        .hero-text h1 {
+          font-size: 2rem;
+        }
+
+        .hero-text p {
+          font-size: 1rem;
+        }
+
+        .btn {
+          padding: 0.8rem 2rem;
+          font-size: 1rem;
+        }
+
+        .service-card {
+          padding: 2rem 1.5rem;
+        }
+
+        .service-icon {
+          font-size: 2.5rem;
+        }
+
+        .service-card h3 {
+          font-size: 1.5rem;
+        }
+
+        .nav-links {
+          gap: 0.5rem;
+        }
+
+        .nav-links a {
+          font-size: 0.8rem;
+        }
+
+        .logo {
+          font-size: 1.2rem;
+        }
+
+        header {
+          padding: 0.8rem 3%;
+        }
+
+        .section-title {
+          font-size: 1.8rem;
+        }
+
+        .contact-form {
+          padding: 1.5rem 1rem;
+        }
+
+        .form-group {
+          margin-bottom: 1.5rem;
+        }
+
+        footer {
+          padding: 2rem 5% 1.5rem 5%;
+        }
+
+        .footer-links {
+          gap: 1rem;
+          font-size: 0.9rem;
+        }
+      }
+
+      /* Fix específico para scroll suave en móviles */
+      html {
+        scroll-behavior: smooth;
+        scroll-padding-top: 80px;
       }
     </style>
   </head>
@@ -538,59 +694,23 @@
       </div>
     </section>
 
-    <footer
-      style="
-        padding: 3rem 5%;
-        background: #0a0a0a;
-        border-top: 1px solid rgba(99, 102, 241, 0.2);
-        text-align: center;
-      "
-    >
-      <div style="max-width: 800px; margin: 0 auto">
-        <h3 style="margin-bottom: 1rem; color: #6366f1">Iván Montañés</h3>
-        <p style="color: #a0a0a0; margin-bottom: 1.5rem">
-          Desarrollador Web | HTML, CSS, JavaScript
-        </p>
-        <div
-          style="
-            display: flex;
-            gap: 2rem;
-            justify-content: center;
-            margin-bottom: 1.5rem;
-            flex-wrap: wrap;
-          "
-        >
-          <a
-            href="mailto:tuemil@ejemplo.com"
-            style="
-              color: #6366f1;
-              text-decoration: none;
-              transition: color 0.3s;
-            "
-            >📧 Email</a
-          >
-          <a
-            href="https://github.com/tuusuario"
-            target="_blank"
-            style="
-              color: #6366f1;
-              text-decoration: none;
-              transition: color 0.3s;
-            "
+    <!-- Footer -->
+    <footer>
+      <div class="footer-content">
+        <h3 class="footer-title">Iván Montañés</h3>
+        <p class="footer-subtitle">Desarrollador Web | HTML, CSS, JavaScript</p>
+        <div class="footer-links">
+          <a href="mailto:ivanmontanesr@gmail.com">📧 Email</a>
+          <a href="https://github.com/ivanMontanesR" target="_blank"
             >🐙 GitHub</a
           >
           <a
-            href="https://linkedin.com/in/tuusuario"
+            href="https://linkedin.com/in/ivan-montañes-b900058a"
             target="_blank"
-            style="
-              color: #6366f1;
-              text-decoration: none;
-              transition: color 0.3s;
-            "
             >💼 LinkedIn</a
           >
         </div>
-        <p style="color: #666; font-size: 0.9rem">
+        <p class="footer-copyright">
           © 2025 Iván Montañés - Todos los derechos reservados
         </p>
       </div>
